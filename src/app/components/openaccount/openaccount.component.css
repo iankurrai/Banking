@@ -1,0 +1,40 @@
+h1
+{
+    text-align: center;
+}
+
+.form
+{
+    margin-left: 20%;
+}
+
+.field
+{
+    width: 30rem;
+}
+
+input[type=text], input[type=date], input[type=email], select
+{
+    width: 70%;
+    padding: 8px 8px;
+}
+
+.validation
+{
+    color: #ff4646;
+    text-align: left;
+}
+
+.btn
+{
+    margin-left: 35%;
+    padding-bottom: 2rem;
+}
+
+button
+{
+    width: 15%;
+    font-size: 1.4rem;
+    background-color: blue;
+    color: white;
+}

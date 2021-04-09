@@ -1,0 +1,37 @@
+<form #loginform="ngForm" name="loginform" (ngSubmit)="RegisterData(loginform)">
+    <table cellpadding="3px">
+        <tr>
+            <td colspan="3" class="head">Login to your Account</td>
+        </tr>
+        <br>
+
+        <div>
+            <label>Enter UserName : </label>
+            <input type="text" name="name" [(ngModel)]="model.name"
+            #name="ngModel" required/>
+            <span *ngIf="name.errors?.required">Name has to be entered</span>
+            <br>
+        </div>
+    
+        <div>
+            <label>Enter Password : </label>   <!--unchanged-->
+            <input type="password" name="pwd" [(ngModel)]="model.pwd"
+            #pwd="ngModel" required/>
+            <span *ngIf="pwd.errors?.required">Password has to be entered</span>
+        
+        </div>
+        <tr>
+            <td colspan="3"><button type="submit">Login</button></td>
+        </tr>
+        <br>
+        <tr>
+            <td colspan="3"><a href="">First Time User? Register</a></td>
+        </tr>
+        <tr>
+            <td colspan="3"><a href="">Forgot User ID?</a></td>
+        </tr>
+        <tr>
+            <td colspan="3"><a href="">Forgot Password?</a></td>
+        </tr>
+    </table>
+</form>
